@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/_data.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="./js/underscore-min.js"></script>
+	<title>抱っこ紐選択デモ</title>
+</head>
+
+<body>
+
+	<p>
+		身長が低く、肩幅も狭い小柄な人でも使えるものがいい
+	</p>
+	<form>
+		<input id="q0" type="radio" name="name" checked="checked">はい
+		<input type="radio" name="name">いいえ
+	</form>
+	<p>
+		子どもが大きくなってきたので、楽なものを買おうとしている(目安9kg)
+	</p>
+	<form>
+		<input id="q1" type="radio" name="name" value="true" checked="checked">はい
+		<input type="radio" name="name" value=false>いいえ
+	</form>
+
+	<p>
+
+		前向き抱っこがし易いものを探している
+	</p>
+	<form>
+		<input id="q2" type="radio" name="name" value="true" checked="checked">はい
+		<input type="radio" name="name" value=false>いいえ
+	</form>
+
+	<button id="submit">決定</button>
+
+	<p>
+		あなたへのおすすめは
+	</p>
+	<div id="result">
+	</div>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
